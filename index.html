@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EgyptDeals - Best Offers & Coupons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">EgyptDeals</div>
+            <div class="nav-links">
+                <a onclick="scrollToSection('new-offers')">Offers</a>
+                <a onclick="scrollToSection('categories')">Categories</a>
+                <a onclick="scrollToSection('popular')">Popular</a>
+                <a onclick="scrollToSection('features')">Why Us</a>
+                <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Egypt's Best Deals, All Here!</h1>
+        <p>Discover amazing discounts and exclusive promo codes from your favorite Egyptian and international stores</p>
+        <button class="cta-button" onclick="scrollToSection('new-offers')">Shop Now</button>
+    </section>
+
+    <!-- New Offers Section -->
+    <section id="new-offers" class="container">
+        <div class="section-header">
+            <h2>New Coupons</h2>
+            <a href="#" class="view-all">View all →</a>
+        </div>
+        <div class="cards-grid">
+            <div class="deal-card">
+                <img class="img1" src="pic/Colorful background banner sales with text effect 3d only today template _ Premium Vector.jpg" alt="">
+                <div class="discount-badge">50%</div>
+                <h3 class="deal-title">Buffalo Burger</h3>
+                <p class="deal-description">Enjoy 50% off all Buffalo Burger meals, including burgers, nuggets, and sides</p>
+                <div class="counter-controls">
+                    <button class="counter-btn" onclick="decrementCounter(this)">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn" onclick="incrementCounter(this)">+</button>
+                </div>
+                <button class="copy-btn">Copy Code</button>
+            </div>
+
+            <div class="deal-card">
+                <img class="img1" src="pic/sweet treat.jpg" alt="">
+                <div class="discount-badge">40%</div>
+                <h3 class="deal-title">Stradivarius</h3>
+                <p class="deal-description">40% off women's clothing, bags, and accessories. Mix and match!</p>
+                <div class="counter-controls">
+                    <button class="counter-btn" onclick="decrementCounter(this)">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn" onclick="incrementCounter(this)">+</button>
+                </div>
+                <button class="copy-btn">Copy Code</button>
+            </div>
+
+            <div class="deal-card">
+                <img class="img1" src="pic/Social media design.jpg" alt="">
+                <div class="discount-badge">40%</div>
+                <h3 class="deal-title">VOX Cinemas</h3>
+                <p class="deal-description">VOX Cinemas is offering 40% off standard and VIP movie tickets</p>
+                <div class="counter-controls">
+                    <button class="counter-btn" onclick="decrementCounter(this)">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn" onclick="incrementCounter(this)">+</button>
+                </div>
+                <button class="copy-btn">Copy Code</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="container">
+        <div class="section-header">
+            <h2>Categories</h2>
+        </div>
+        <div class="categories">
+            <div class="category-chip">🍕 Restaurants</div>
+            <div class="category-chip">👕 Fashion</div>
+            <div class="category-chip">📱 Electronics</div>
+            <div class="category-chip">✈️ Travel</div>
+            <div class="category-chip">🏠 Home</div>
+            <div class="category-chip">💄 Beauty</div>
+            <div class="category-chip">🎮 Gaming</div>
+            <div class="category-chip">📚 Books</div>
+        </div>
+    </section>
+
+    <!-- Popular Deals Section -->
+    <section id="popular" class="container">
+        <div class="section-header">
+            <h2>Top Used Coupons</h2>
+            <a href="#" class="view-all">View all →</a>
+        </div>
+        <div class="cards-grid">
+            <div class="deal-card">
+                <img class="img1" src="pic/Pizza Hut125 Deal.jpg" alt="">
+                <div class="discount-badge">50%</div>
+                <h3 class="deal-title">Pizza Hut</h3>
+                <p class="deal-description">Pizza Hut is offering 50% off all medium and large pizzas, available...</p>
+                <div class="counter-controls">
+                    <button class="counter-btn" onclick="decrementCounter(this)">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn" onclick="incrementCounter(this)">+</button>
+                </div>
+                <button class="copy-btn">Copy Code</button>
+            </div>
+
+            <div class="deal-card">
+                <img class="img1" src="pic/Noon Discounts Code.jpg" alt="">
+                <div class="discount-badge">45%</div>
+                <h3 class="deal-title">Noon Egypt</h3>
+                <p class="deal-description">MINISO Egypt 45% off lifestyle must-haves — home decor, accessories...</p>
+                <div class="counter-controls">
+                    <button class="counter-btn" onclick="decrementCounter(this)">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn" onclick="incrementCounter(this)">+</button>
+                </div>
+                <button class="copy-btn">Copy Code</button>
+            </div>
+
+            <div class="deal-card">
+                <img class="img1" src="pic/Lotus Pear Eau de Parfum.jpg" alt="">
+                <div class="discount-badge">30%</div>
+                <h3 class="deal-title">La Poire</h3>
+                <p class="deal-description">Get 30% off La Poire desserts and drinks — because happiness tastes...</p>
+                <div class="counter-controls">
+                    <button class="counter-btn" onclick="decrementCounter(this)">-</button>
+                    <span class="counter-value">0</span>
+                    <button class="counter-btn" onclick="incrementCounter(this)">+</button>
+                </div>
+                <button class="copy-btn">Copy Code</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container">
+        <div class="section-header">
+            <h2>Why EgyptDeals?</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"></div>
+                <h3>Easy and Fast</h3>
+                <p>Find your favorite store, grab the coupon, and start saving in just seconds</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"></div>
+                <h3>Deals Every Day</h3>
+                <p>We bring you the latest and hottest deals from Egypt's best stores</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"></div>
+                <h3>Trusted Brands</h3>
+                <p>All our offers come directly from verified Egyptian and international stores</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Random Popup -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup">
+            <button class="popup-close" onclick="closePopup()">×</button>
+            <h3>Special Offer!</h3>
+            <p>Get an extra 20% off your first order! Use code: <strong>FIRST20</strong></p>
+            <button class="cta-button" onclick="closePopup()">Grab the Discount</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Your Trusted Partner in Everyday Savings</h3>
+            <p>Thousands of users save with us daily — be part of Egypt's growing savings community!</p>
+            <p style="margin-top: 2rem; opacity: 0.8;">© 2025 EgyptDeals - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html>
